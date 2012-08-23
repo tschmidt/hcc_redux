@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HccRedux</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <%= render 'common/main_navigation' %>
+  
+  <div class='container'>
+    <h1 class='page-header'>Coleman College for Health Sciences</h1>
+    
+    <%= render 'common/slideshow' %>
+    <%= render 'common/sections' %>
+    
+    <hr>
+    
+    <h2>Latest News</h2>
+    
+    <div class='news-articles'>
+      <div class='article'>
+        <h3>Headline</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+          aliquip ex ea commodo consequat. Duis aute irure dolor in 
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+          culpa qui officia deserunt mollit anim id est laborum.
+          ( <%= link_to 'more' %> )
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
